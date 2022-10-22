@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./core/Home";
 import Signup from "./user/Signup";
 import Signin from "./user/Signin";
 import AdminRoute from "./auth/helper/AdminRoutes";
@@ -14,6 +13,7 @@ import ManageProducts from "./admin/ManageProducts";
 import UpdateProduct from "./admin/UpdateProduct";
 import Updatecategory from "./admin/updateCategory";
 import Cart from "./core/cart";
+import Home from "./core/Home";
 
 
 const Routes = () => {

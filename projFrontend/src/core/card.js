@@ -6,7 +6,7 @@ import { addItemToCart, removeItemFromCart } from './helper/cartHelper';
     const Card = ({product=undefined, addtoCart= true, removeFromCart= false, setReload=f=>f, reload=undefined}) => {
 
       const [redirect, setRedirect] = useState(false);
-      const [count, setCount] = useState(product.count);
+      const [count, setCount] = useState(product?.count);
 
       const cartTitle= product? product.name : "A photo from pexels";
       const cartDescription= product? product.description : " this photo looks great";

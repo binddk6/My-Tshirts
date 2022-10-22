@@ -5,15 +5,16 @@ const Base = ({
   title = "My Title",
   description = "My desription",
   className = "bg-dark text-white p-4",
+  canHide,
   children
 }) => (
   <div>
     <Menu />
     <div className="container-fluid">
-      <div className="jumbotron bg-dark text-white text-center">
+      {canHide?null:<div className="jumbotron bg-dark text-white text-center">
         <h2 className="display-4">{title}</h2>
         <p className="lead">{description}</p>
-      </div>
+      </div>}
       <div className={className}>{children}</div>
     </div>
     <footer className="footer bg-dark mt-auto py-3">
