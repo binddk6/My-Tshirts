@@ -40,7 +40,7 @@ export default function Home() {
           <Card/>
         </div> */}
 
-        {products.map((product,index)=>{
+        {products?.map((product,index)=>{
           return(
             <div key={index} className="col-4 mb-4" text-center>
               <Card product={product} />
